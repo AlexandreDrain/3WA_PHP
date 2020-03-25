@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+    font-size: 100px;
+}
+
+a { 
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}

@@ -7,5 +7,9 @@
             "App\\" : "src/",
             "3WA_PHP\\" : "3WA_PHP/"
         }
+    },
+    "require": {
+        "twig/twig": "3.0",
+        "nikic/fast-route": "^1.3"
     }
 }
