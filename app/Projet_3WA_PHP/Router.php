@@ -1,13 +1,23 @@
 <?php
 
-class Router {
-    
-    public function addRoute() {
+namespace Projet_3WA_PHP;
 
-        // Fetch method and URI from somewhere 
-        $httpMethod = $_SERVER['REQUEST_METHOD']; // SI c'est du POST ou du GET
-        // Strip query string (?foo=bar) and decode URI
-        $uri = $_SERVER['REQUEST_URI']; // contenue get de la barre de recherche, URI litteralement 
+use FastRoute;
+
+class Router {
+
+    public function setRoutes() 
+    {
+        $route = include dirname(__DIR__) . '/routes.php';
+        // Dispatcher Création des routes !
+        return FastRoute\simpleDispatcher($route);
+    }
+
+    public function runRoute($dispatcher) 
+    {
+        // Fetch method and URI from somewhere
+        $httpMethod = $_SERVER['REQUEST_METHOD']; // récupère le type de la route, GET ou POST etc
+        $uri = $_SERVER['REQUEST_URI'];
         if (false !== $pos = strpos($uri, '?')) {
             $uri = substr($uri, 0, $pos);
         }

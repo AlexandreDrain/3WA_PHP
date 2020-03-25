@@ -5,7 +5,7 @@
     "autoload" : {
         "psr-4": {
             "App\\" : "src/",
-            "3WA_PHP\\" : "3WA_PHP/"
+            "Projet_3WA_PHP\\" : "app/Projet_3WA_PHP/"
         }
     },
     "require": {
