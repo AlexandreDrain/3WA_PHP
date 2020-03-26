@@ -39,7 +39,7 @@ class Router {
             } elseif (is_callable($routeInfo[1])) {
                 $method = $routeInfo[1];
             }
-            call_user_func_array($method, $routeInfo[2]);
+            echo call_user_func_array($method, $routeInfo[2]);
         }
         // var_dump($httpMethod); // var_dump de $httmethod pour savori ce qu'elle contient
         // var_dump($uri); // var_dump de $uri pour savori ce qu'elle contient
