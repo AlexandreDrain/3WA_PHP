@@ -47,7 +47,7 @@ class Router {
         switch ($routeInfo[0]) {
             case FastRoute\Dispatcher::NOT_FOUND:
                 // ... 404 Not Found
-                include dirname( __DIR__ ) . '/../templates/error.phtml';
+                include dirname( __DIR__ ) . '/../templates/error.html.twig';
                 break;
         }
     }
