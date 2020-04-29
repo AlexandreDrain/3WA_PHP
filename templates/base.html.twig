@@ -11,10 +11,16 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <h1>{% block titre %}{% endblock %}</h1>
-    {% block body %}
+    {% include "/nav/navbar.html.twig" %}
+    <h1 class="text-center">{% block titre %}{% endblock %}</h1>
+    <main>
+    {% block bodyMain %}
 
     {% endblock %}
+    </main>
+    
+
+    {% include "/footer/footer.html.twig" %}
 
 {% block javascript %}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

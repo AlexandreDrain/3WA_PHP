@@ -5,8 +5,21 @@
             "Projet_3WA_PHP\\" : "app/Projet_3WA_PHP/"
         }
     },
+    "autoload-dev": {
+        "psr-4" : {
+            "Tests\\" : "tests/"
+        }
+    },
     "require": {
         "twig/twig": "3.0",
-        "nikic/fast-route": "^1.3"
+        "nikic/fast-route": "^1.3",
+        "phpunit/phpunit": "^9.1",
+        "mongodb/mongodb": "^1.6",
+        "fzaninotto/faker": "^1.9"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.5"
     }
+    
+
 }

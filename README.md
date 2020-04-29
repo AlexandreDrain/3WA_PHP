@@ -1,4 +1,4 @@
-# Mon framework 3WA_PHP
+# Mon framework Projet_3WA_PHP
 
 ## Les Règles
 
